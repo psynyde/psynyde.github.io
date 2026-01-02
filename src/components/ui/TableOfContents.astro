@@ -346,18 +346,11 @@ const { toc = [] }: TOCProps = Astro.props
     opacity: 0;
   }
 
-  .toc-level-1 .toc-link:hover::before,
-  .toc-level-2 .toc-link:hover::before,
-  .toc-level-3 .toc-link:hover::before {
-    width: 0.75rem;
-    transition: width 0.1s ease-out;
-  }
-
   .toc-link.active {
     color: var(--text-primary);
   }
 
-  /* Horizontal line indicators */
+  /* Circle indicators */
   .toc-level-0 .toc-link::before,
   .toc-level-1 .toc-link::before,
   .toc-level-2 .toc-link::before,
@@ -366,18 +359,25 @@ const { toc = [] }: TOCProps = Astro.props
     position: absolute;
     left: 0;
     top: 50%;
-    width: 2.5rem;
-    height: 1px;
-    background-color: var(--text-tertiary);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--text-tertiary);
     transform: translateY(-50%);
     opacity: 0.4;
     transition: all 0.1s ease-out;
   }
 
-  .toc-link:hover::before,
+  .toc-link:hover::before {
+    opacity: 1;
+    border-color: var(--text-primary);
+  }
+
   .toc-link.active::before {
-    opacity: 0.8;
+    opacity: 1;
     background-color: var(--text-primary);
+    border-color: var(--text-primary);
   }
 
   /* Hide on mobile */
