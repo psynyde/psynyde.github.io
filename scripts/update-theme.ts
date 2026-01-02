@@ -1,10 +1,12 @@
 #!/usr/bin/env tsx
 
 /**
- * Update theme from upstream repository
- * Usage: pnpm update-theme
+ * This script was originally used to update the theme from an upstream repository.
+ * As this project is now a standalone website, this script is no longer needed
+ * and has been disabled to prevent accidental execution.
  */
 
+/*
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -44,3 +46,4 @@ try {
     process.exit(1)
   }
 }
+*/

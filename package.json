@@ -1,24 +1,21 @@
 {
-  "name": "astro-chiri",
+  "name": "psynyde-blog",
   "type": "module",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "pnpm exec tsx scripts/toggle-proxy.ts",
-    "build": "pnpm run prebuild && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "new": "tsx scripts/new-post.ts",
-    "update-theme": "tsx scripts/update-theme.ts"
+    "new": "tsx scripts/new-post.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
-    "@astrojs/netlify": "^6.6.3",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@playform/inline": "^0.1.2",

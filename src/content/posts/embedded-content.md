@@ -56,7 +56,7 @@ then you don't need to set adapter before building.
 
 ## GitHub
 
-::github{repo="the3ash/astro-chiri"}
+::github{repo="psynyde/psynyde.github.io"}
 
 ## X Post
 

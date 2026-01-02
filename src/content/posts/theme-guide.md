@@ -3,7 +3,7 @@ title: 'Theme Guide'
 pubDate: '2025-07-10'
 ---
 
-Chiri is a minimal blog theme built with [Astro](https://astro.build), offering customization options while preserving its clean aesthetic.
+Psynyde is a minimal blog theme built with [Astro](https://astro.build), offering customization options while preserving its clean aesthetic.
 
 ---
 
@@ -21,9 +21,9 @@ Chiri is a minimal blog theme built with [Astro](https://astro.build), offering 
 ```ts
 // Site Info
 site: {
-  website: 'https://astro-chiri.netlify.app/', // Site domain
-  title: 'CHIRI', // Site title
-  author: '3ASH', // Author name
+  website: 'https://psynyde.github.io/', // Site domain
+  title: 'PSYNYDE', // Site title
+  author: 'psynyde', // Author name
   description: 'Minimal blog built by Astro', // Site description
   language: 'en-US' // Default language
 },
