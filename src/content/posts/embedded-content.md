@@ -56,7 +56,7 @@ then you don't need to set adapter before building.
 
 ## GitHub
 
-::github{repo="psynyde/psynyde.github.io"}
+::github{repo="psynyde/wl-ime-type"}
 
 ## X Post
 

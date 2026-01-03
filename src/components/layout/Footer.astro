@@ -1,22 +1,29 @@
 ---
-import { themeConfig } from '@/config'
-const today = new Date()
+const quranicVerses = [
+  { ayah: 'Indeed, Allah is with the patient.', surah: 'Al-Baqarah 2:153' },
+  { ayah: 'And Allah is with the doers of good.', surah: 'Al-Imran 3:148' },
+  {
+    ayah: 'And rely upon Allah. And sufficient is Allah as Disposer of affairs.',
+    surah: 'Al-Ahzab 33:3'
+  },
+  { ayah: 'Indeed, with hardship [will be] ease.', surah: 'Ash-Sharh 94:6' },
+  { ayah: 'And He is with you wherever you are.', surah: 'Al-Hadid 57:4' },
+  { ayah: 'Allah does not burden a soul beyond its capacity.', surah: 'Al-Baqarah 2:286' },
+  {
+    ayah: 'And whoever puts their trust in Allah, then He is sufficient for them.',
+    surah: 'At-Talaq 65:3'
+  },
+  { ayah: 'My Lord, increase me in knowledge.', surah: 'Ta-Ha 20:114' },
+  { ayah: 'Indeed, with me is my Lord; He will guide me.', surah: 'Ash-Shu’ara 26:62' }
+]
+
+const randomVerse = quranicVerses[Math.floor(Math.random() * quranicVerses.length)]
 ---
 
 <footer>
   <div class="footer-content">
-    <div class="copyright">
-      <span class="date">
-        &copy;
-        {today.getFullYear()}
-      </span>
-      {themeConfig.site.author}
-    </div>
-    <div class="powered-by">
-      Powered by{' '}
-      <a href="https://astro.build">Astro</a> &{' '}
-      <a href="https://github.com/psynyde/psynyde.github.io">Psynyde</a>
-    </div>
+    <div class="ayah">{randomVerse.ayah}</div>
+    <div class="surah">{randomVerse.surah}</div>
   </div>
 </footer>
 <style>
@@ -38,8 +45,8 @@ const today = new Date()
     width: 100%;
   }
 
-  .copyright,
-  .powered-by {
+  .surah,
+  .ayah {
     white-space: nowrap;
   }
 
