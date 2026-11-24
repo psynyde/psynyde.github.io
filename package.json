@@ -18,7 +18,7 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
-    "@playform/inline": "^0.1.2",
+    "@playform/inline": "^0.1.4",
     "astro": "^5.16.6",
     "astro-og-canvas": "^0.7.2",
     "canvaskit-wasm": "^0.40.0",
