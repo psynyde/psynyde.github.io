@@ -1,7 +1,7 @@
 version: 2
 updates:
-  # Enable npm (pnpm) dependency updates
-  - package-ecosystem: 'npm'
+  # Enable Bun dependency updates
+  - package-ecosystem: 'bun'
     directory: '/'
     schedule:
       # Check for updates every Monday at 09:00 (Asia/Shanghai)
@@ -17,9 +17,8 @@ updates:
     assignees:
       - 'the3ash'
     commit-message:
-      # Use 'deps' for production dependencies, 'dev' for development dependencies
+      # Use 'deps' for dependency updates
       prefix: 'deps'
-      prefix-development: 'dev'
       include: 'scope'
     # Labels to add to Dependabot PRs
     labels:
@@ -29,7 +28,6 @@ updates:
       # Ignore major version updates (breaking changes)
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
-    versioning-strategy: auto
 
   # Enable GitHub Actions updates
   - package-ecosystem: 'github-actions'
