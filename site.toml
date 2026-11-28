@@ -1,0 +1,9 @@
+title = "PSYNYDE"
+author = "psynyde"
+description = "A simple ssg using rust for psynyde :D"
+language = "en-US"
+content_width = "35rem"
+website = "https://psyny.de"
+theme = "themes/mono.tmTheme"
+theme_light = "themes/rose-pine-dawn.tmTheme"
+copy_code = true

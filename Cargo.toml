@@ -1,0 +1,11 @@
+[package]
+name = "blog"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Native KaTeX renderer: emits HTML + MathML server-side, no JS/Node needed.
+katex-rs = "0.3"
+pulldown-cmark = "0.13"
+# Pure-Rust regex engine; avoids the optional `onig` C dependency.
+syntect = { version = "5.3", default-features = false, features = ["default-fancy"] }
